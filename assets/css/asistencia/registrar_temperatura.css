@@ -1,0 +1,547 @@
+html,body{
+    margin:0;
+    height: 100%;
+    background-image: url('../../images/asistencia/fondo_temperatura.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:-webkit-linear-gradient(left, #0071bc, #244b9a);
+    }
+
+ .container-fluid{
+  margin:0px;
+  padding: 0px;}
+
+#logoPrincipal{
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 5px;}
+
+#img_Contenido{
+    position: absolute;
+    width: 45%;
+    left:0px;
+    bottom: 0px;
+    z-index: 2;}
+
+    /*_________________Fecha y hora_________________*/   
+
+#contenedor_fechahora{
+    background-color: transparent;
+    width: 450px;
+    height: 10%;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 65%;}
+
+  .widget {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;}
+
+  .widget p {
+    display: inline-block;
+    margin: 0px;}
+
+  .fecha {
+    font-family: 'Franklin_Gothic_Demi_Cond';
+    text-align: center;
+    font-size: 30px;
+    background:transparent;
+    color: white;
+    width: 100%;
+    height: fit-content;}
+
+  .reloj {
+    font-family:  'Franklin_Gothic_Demi_Cond';
+    width: 100%;
+    height: fit-content;
+    font-size:35px;
+    text-align: center;
+    background: transparent;
+    color: white;}
+
+/*__________________________________*/ 
+
+.register{
+    height: 100%;
+}
+
+#contenedor_login{
+    position: absolute;
+    width: 450px;
+    height: 65%;
+    padding: 0;
+    margin-top: 10%;
+    margin-left: 65%;
+    background-color: transparent;
+    background-image: url('../../images/asistencia/contenedor_login.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: white;
+    border-style:solid ;
+    border-width: 1px;
+    border-radius: 2%;
+    text-align: center;
+    z-index: 1;}
+
+    #img_Pipet{
+    width:35%;
+    height: auto;
+    position: absolute;
+    top:10px;
+    left: 32.5%;}
+
+    #subcontenedor_login{
+    position: absolute;
+    background-color: transparent;
+    top:35%;
+    width: 100%;
+    height: fit-content;}
+
+    div.col , div.row{
+    padding: 0;}
+
+    div.col.form-group{
+      background-color: transparent;
+    margin: 0;}
+
+    #lblTitulo{
+    font-family: 'Raleway_Regular';
+    color: white;
+    font-size: 180%;
+    width: 100%;}
+
+    #lblNombreColaborador{
+    font-family: 'Franklin_Gothic_Demi_Cond';
+    color: white;
+    font-size: 28px;}
+
+    #txtTemperatura{
+    font-family: 'Roboto_Regular';
+    text-align: center;
+    width: 100%;
+    color:#535252;}
+
+    #btnRegistrar{
+    font-family: 'Raleway_Regular';
+    font-size: 25px;
+    background-color: #244B9A;
+    border-color: transparent;
+    border-radius: 30px;
+    margin-top: 5%;
+    width: 100%;
+    height: 50px;
+    }
+
+    div.row.form-group{
+      margin: 0;
+      height: 60px;
+      text-align: center;
+      background-color: transparent;
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+    #img_Ubicacion{
+      width:8%;
+      height: auto;
+      position:absolute;
+      left: 35%
+    }
+
+    #lblAgencia{
+      margin:0px;
+      font-family: 'Roboto_Regular';
+      color: white;
+      position: absolute;
+      left: 45%;
+      font-size: 20px;}
+
+/*__________________Responsive__________________*/
+
+@media screen and (max-width: 1024px) and (max-height: 720px){
+
+  .fecha{
+      font-size: 20px;}
+
+}
+
+@media screen and (max-width: 900px) {
+
+  #logoPrincipal{
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 10px;}
+
+  #img_Contenido{
+  width:250px;}
+
+  #contenedor_fechahora{      
+  width: 80%;
+  height: 10%;
+  margin:0;
+  padding: 0;
+  position: absolute;
+  padding: 0;
+  margin-top: 5%;
+  margin-left: 10%;}
+
+  .widget p {
+  display: inline-block;
+  line-height: 2px;}
+
+  .fecha {
+  font-size: 15px;
+  margin-bottom: 0px;}
+
+  .reloj {
+  font-size: 30px;}
+
+  #contenedor_login{
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  padding: 0;
+  margin-top: 25%;
+  margin-left: 10%;}
+
+  #subcontenedor_login{
+    position: absolute;
+    top:30%;
+    width: 100%;
+    height:65%;}
+
+  #img_Pipet{
+    width:30%;
+    height: auto;
+    position: absolute;
+    top:10px;
+    left: 35%;}
+
+  #lblTitulo{
+  font-size: 20px;}
+
+  #lblNombreColaborador{
+  font-size: 20px;
+  }
+
+  div.row.form-group{
+    height: 50px;
+  }
+
+  @media screen and (max-height:450px){
+    #img_Contenido{
+      position: absolute;
+      margin-bottom: 0;
+      width:100px;}
+
+      #contenedor_login{
+        position: absolute;
+        width: 80%;
+        height: 60%;
+        padding: 0;
+        margin-top: 21%;
+        margin-left: 10%;;
+      }
+
+      #img_Pipet{
+        width: 15%;
+        left: 40%;
+      }
+
+      #subcontenedor_login{
+        position: absolute;
+        top:24%;
+        width: 100%;
+        height: 60%;
+      font-size: 10px;}
+
+      div.row.form-group{
+        height: 30px;
+      }
+
+      #txtTemperatura{
+        font-size: 12px;
+      }
+
+      #btnRegistrar{
+        margin-top:1%;
+        font-size: 10px;
+        height: 30px;
+      }
+
+        #img_Ubicacion{
+          width: 20px;
+        }
+
+        #lblAgencia{
+          font-size: 15px;
+        }
+
+  }
+  
+}
+    
+@media screen and (max-width: 900px)  and (orientation:landscape){
+
+  #logoPrincipal{
+  width: 150px;
+  margin-top: 5px;
+  margin-left: 10px;}
+
+  #contenedor_fechahora{      
+  width: 26%;
+  height: 15%;
+  margin:0;
+  padding: 0;
+  position: absolute;
+  padding: 0;
+  margin-top: 0%;
+  margin-left: 70%;}
+
+  .widget p {
+  display: inline-block;
+  line-height: 2px;}
+
+  .fecha {
+  font-size: 14px;
+  margin-bottom: 0px;
+  padding: 0px;}
+
+  .reloj {
+  font-size: 25px;
+  padding: 0px;}
+
+  #contenedor_login{
+  position: absolute;
+  width: 26%;
+  height: 62%;
+  padding: 0;
+  margin-top: 7%;
+  margin-left: 70%;
+  background-color: transparent;}
+
+  #subcontenedor_login{
+  position: absolute;
+  margin-top:4%;
+  width: 100%;
+  height:65%;}
+
+  #img_Pipet{
+  width:20%;
+  height: auto;
+  position: absolute;
+  top:10px;
+  left: 40%;}
+
+  #img_Contenido{
+  width:30%;}
+
+  #lblTitulo{
+  font-size: 13px;
+  margin:0px;}
+
+  #lblNombreColaborador{
+  margin-top: 0;
+  font-size: 13px;}
+
+  #txtTemperatura{
+    font-size: 13px;
+    height: 30px;}
+
+  #btnRegistrar{
+  width: 100%;
+  height: 20px;
+  margin-top: 2%;
+  padding: 0px;
+  font-size: 13px;}
+
+  div.row.form-group{
+    margin-top: 4%;
+    height: 20px;}
+
+  #lblAgencia{
+    font-size: 13px;}
+  
+}
+
+@media screen and (max-width: 400px) {
+
+  #logoPrincipal{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;}
+  
+    #img_Contenido{
+    width:50%;}
+  
+    #contenedor_fechahora{      
+    width: 80%;
+    height: 9%;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    padding: 0;
+    margin-top: 5%;
+    margin-left: 10%;}
+  
+    .widget p {
+    display: inline-block;
+    line-height: 2px;}
+  
+    .fecha {
+    font-size: 13px;
+    margin-bottom: 0px;}
+  
+    .reloj {
+    font-size: 20px;}
+  
+    #contenedor_login{
+    position: absolute;
+    width: 80%;
+    height:55%;
+    padding: 0;
+    margin-top: 20%;
+    margin-left: 10%;}
+  
+    #subcontenedor_login{
+      position: absolute;
+      top:32%;
+      width: 100%;
+      height: 65%;}
+  
+    #img_Pipet{
+      width:30%;
+      height: auto;
+      position: absolute;
+      top:10px;
+      left: 35%;}
+  
+    #lblTitulo{
+    font-size: 15px;}
+  
+    #lblNombreColaborador{
+    font-size: 15px;
+    }
+  
+    div.row.form-group{
+      margin-top: 4%;
+      height: 30px;
+    }
+
+    #btnRegistrar{
+      width: 100%;
+      margin-top: 4%;
+      height: 30px;
+      padding: 0px;
+      font-size: 13px;}
+
+    #lblAgencia{
+    font-size: 15px;}
+  
+}
+
+@media screen and (max-width:600px)  and (orientation:landscape){
+
+  #logoPrincipal{
+  width: 150px;
+  margin-top: 5px;
+  margin-left: 10px;}
+
+  
+  #img_Contenido{
+    width:45%;}
+
+  #contenedor_fechahora{      
+  width: 30%;
+  height: 15%;
+  margin:0;
+  padding: 0;
+  position: absolute;
+  padding: 0;
+  margin-top: 0%;
+  margin-left: 65%;}
+
+  .widget p {
+  display: inline-block;
+  line-height: 2px;}
+
+  .fecha {
+  font-size: 13px;
+  margin-bottom: 0px;
+  padding: 0px;}
+
+  .reloj {
+  font-size: 20px;
+  padding: 0px;}
+
+  #contenedor_login{
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  padding: 0;
+  margin-top: 9.5%;
+  margin-left: 65%;
+  background-color: transparent;}
+
+  #subcontenedor_login{
+  position: absolute;
+  top:29%;
+  width: 100%;
+  height:70%;}
+
+  #img_Pipet{
+  width:26%;
+  height: auto;
+  position: absolute;
+  top:10px;
+  left: 37%;}
+
+
+  #lblTitulo{
+  font-size: 8px;
+  margin:0px;}
+
+  #lblNombreColaborador{
+  margin-top: 0px;
+  font-size: 10px;}
+
+  #txtTemperatura{
+    font-size: 13px;
+    height: 20px;}
+  #txtTemperatura::placeholder{
+    font-size: 9px;
+  }
+
+  #btnRegistrar{
+  width: 100%;
+  height: 20px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;}
+
+  div.row.form-group{
+    margin-top: 3%;
+    height: 20px;}
+  
+  #img_Ubicacion{
+    left: 30%;
+  }
+
+  #lblAgencia{
+    font-size: 9px;}
+  
+}
+

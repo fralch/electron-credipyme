@@ -1,0 +1,191 @@
+html, body {
+    background-color: #244B9A;
+    color: rgb(65,78,87);
+    height: 100vh;
+    margin: 0;
+  }
+body{
+    background-color: #244B9A;
+    display: flex;
+    flex-direction: column;
+
+}
+header{
+    background-color: white;
+    box-shadow: 0px 10px   #9ACB57;
+    margin-bottom: 7%;
+}
+header #logo{
+
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+section {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    height: 100vh;
+}
+section h1{
+    margin-left: 5%;
+    font-size: 1.5em;
+}
+section form{
+    position: relative;
+    margin-left: 3%;
+}
+section form input{
+    display: inline-block;
+    margin-top: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+section form span{
+    display: inline-block;
+    clear: left;
+    width: 150px;
+    text-align: left;
+    margin-top: 5px;
+
+
+}
+section form .no_edit{
+    background-color: #def2b1;
+    border: 1px solid #def2b1;
+
+}
+section form #btn_ingresar{
+    position: relative;
+    background-color: #7BAA25;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    padding: 10px 16px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: -2%;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+    background-color: #1D1D1D;
+    bottom:0;
+    width:100%;
+    height:50px;
+    color: #726F5F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px -10px   #2F2F2F;
+    text-align: center;
+}
+select{
+    position: relative;
+    width: 45%;
+}
+
+/* inicio switcher  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #habilitado{
+      width: 70px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    top:1px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #7BAA25;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #7BAA25;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    width: 50px;
+    height: 20px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* fin switcher  */
+@media (min-width: 700px) {
+    header{
+        background-color: white;
+    }
+    header #logo{
+       margin-top: 2%;
+        width: 15%;
+        margin-left: 2%;
+
+    }
+    body{
+        background-color: #244B98;
+        background-image: url('http://127.1.1.1/img/imagen.svg');
+        background-repeat: no-repeat, repeat;
+        background-position: left;
+        background-size: 40%;
+        background-position-y: 50%;
+    }
+    section{
+        position: relative;
+        width: 50%;
+        margin-left: 50%;
+        margin-top: -5%;
+
+    }
+    section span{
+        color: white;
+    }
+    section form #btn_ingresar{
+        position: relative;
+        margin-left: 10%;
+        margin-top: 0;
+
+    }
+    section form input{
+        width: 300px;
+    }
+    select{
+        position: relative;
+        width: 300px;
+    }
+}

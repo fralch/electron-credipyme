@@ -1,0 +1,263 @@
+a:link { text-decoration: none }
+a:hover {text-decoration: none }
+a:visited { text-decoration: none; color:white;}
+
+body{ 
+  margin:0;
+  background-image: url(../../images/home/portada-sistema.svg) ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color:  #244b9a;
+}
+
+.header{
+    text-align: center;
+}
+
+
+
+.boton{
+    width:200px;
+    height:200px;
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 100px;
+    font-family: 'Franklin_Gothic_Demi_Cond';
+    font-size: 30px;
+    color: white;
+    font-display: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    float:left;
+  }
+
+#btnCreditos {
+  background-color:#337BA3;
+}
+
+#btnCreditos:hover {
+    box-shadow: inset 0 0 130px #00a6ff;
+    cursor: pointer;
+}
+
+#btnOperaciones {
+  background-color:#70639E;
+}
+
+#btnOperaciones:hover {
+    box-shadow: inset 0 0 130px #3700ff;
+    cursor: pointer;
+}
+
+#btnGth {
+  background-color:#D6975F;
+}
+
+#btnGth:hover {
+    box-shadow: inset 0 0 130px #ff7700;
+    cursor: pointer;
+}
+
+#btnLogistica {
+  background-color:#71BC9C;
+}
+
+#btnLogistica:hover {
+    box-shadow: inset 0 0 130px #00ff91;
+    cursor: pointer;
+}
+
+#btnContabilidad {
+  background-color:#D64355;
+}
+
+#btnContabilidad:hover {
+    box-shadow: inset 0 0 130px #ff001e;
+    cursor: pointer;
+}
+
+.sub_boton{
+  background-color: #eb842a;
+  width:100%;
+  height:80px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 20px;
+  font-family: 'Franklin_Gothic_Demi_Cond';
+  font-size:17px;
+  color:#FFF;
+  font-display: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  float:left;
+
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-size: contain;
+}
+
+.sub_boton:hover{
+  cursor: pointer;
+}
+
+a{
+  color: white;
+}
+
+a.sub_text{
+color: white;
+position: relative;
+font-size: 18px;
+}
+
+
+/* @-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.sub_boton:hover, .sub_boton:focus, .sub_boton:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  cursor: pointer;
+} */
+
+
+
+
+/* Wobble Vertical */
+@-webkit-keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.sub_boton {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+
+}
+.sub_boton:hover, .sub_boton:focus, .sub_boton:active {
+  -webkit-animation-name: hvr-wobble-vertical;
+  animation-name: hvr-wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+
+.dropdown-menu{
+background-color: transparent;
+border-color: transparent;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+}
+
+ul.dropdown-menu.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.dropdown-toggle::after{
+    display:none;
+}
+
+.btn.focus, .btn:focus{
+    box-shadow: none;
+}
+
+#content_Principal{
+    text-align: center;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 992px) {
+  .boton {
+    font-size: 25px;
+  }
+  .sub_text{
+      font-size: 15px;
+  }
+}

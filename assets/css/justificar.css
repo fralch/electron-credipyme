@@ -1,0 +1,38 @@
+html, body {
+    background-color: #244B9A;
+    color: rgb(65,78,87);
+    height: 100vh;
+    margin: 0;
+}
+body{
+    background-color: #244B9A;
+    display: flex;
+    flex-direction: column;
+
+}
+#contenido{
+    margin-top: 8%;
+    height: 600px;
+}
+#contenido #logo{
+    background-color:#9acb57 ;
+    height: 600px;
+    background-image: url('http://credipymesolucion.com.pe/images/imagen_blue.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 110%;
+    background-position-y: 50%;
+}
+#contenido #formulario{
+    box-shadow: 1px 2px 71px 11px rgba(0,0,0,0.75);
+    height: 600px;
+    
+}
+#contenido #formulario h2{
+
+    color: #1a52c4;
+}
+
+#contenido #formulario #form-text{
+    margin-left: 5%;
+}
